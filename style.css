@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+.card {
+            border: 1px solid black;
+            /* background-color: rgb(141, 238, 255); */
+            border-radius: 10%;
+            outline: black solid 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            height: 260px;
+            text-align: center;
+            margin: 100px;
+            box-shadow: 10px 10px 39px -4px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 39px -4px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 39px -4px rgba(0, 0, 0, 0.75);
+            /* overflow: hidden; */
+ }
+ img {
+    width: 70%;
+    object-fit: contain;
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.363);
+    padding-bottom: 20px;
+}
+.card::before {
+    /* background-color: aqua; */
+    color: grey;
+    position: relative;
+    left: -80px;
+    top: 10px;
+    content: "X";
+    font-size: 18px;
+    padding: 2px;
+}
+.card::after {
+    content: "9";
+    background-color: red;
+    color: white;
+    padding: 3px 13px;
+    font-size: 30px;
+    position: relative;
+    bottom: 253px;
+    right: -95  px;
+    z-index: 2;
+    border-radius: 50%;
+}
